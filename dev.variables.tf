@@ -1,6 +1,7 @@
 variable "resource_group_name" {
   type        = string
   description = "Name of the current resource group."
+  default     = "rg-oystein-test"
 }
 
 variable "location" {
@@ -16,8 +17,9 @@ variable "tags" {
 }
 
 variable "environment" {
-    type      = string
+    type        = string
     description = "Environment for the resources."
+    default     = "dev"
 }
 
 variable "ARM_CLIENT_ID" {
