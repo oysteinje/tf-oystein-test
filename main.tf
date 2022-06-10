@@ -16,5 +16,5 @@ resource "azurerm_resource_group" "rg" {
   location = var.location
 }
 
-data "azurerm_subscription" "current" {
-}
+# data "azurerm_subscription" "current" {
+# }
