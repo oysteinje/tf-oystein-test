@@ -1,6 +1,7 @@
 name: Deploy Terraform Workload Dev
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - dev
