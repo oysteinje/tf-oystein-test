@@ -16,7 +16,7 @@ env:
 jobs:
   deployment:
     runs-on: ubuntu-latest
-    environment: ${{ env.ENVIRONMENT }}
+    environment: dev
     steps:
       # This step checks out a copy of your repository.
       - uses: actions/checkout@v3
