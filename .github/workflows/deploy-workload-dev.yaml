@@ -7,7 +7,7 @@ on:
       - dev
 
 env:
-  ENVIRONMENT: dev
+  #ENVIRONMENT: dev
   ARM_CLIENT_ID: c376f14f-2994-4ed9-8df1-9e3d1087d749
   ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
   ARM_SUBSCRIPTION_ID: a83145a3-215b-44a4-9387-a540faaa58e9
@@ -22,8 +22,6 @@ jobs:
       - uses: actions/checkout@v3
       
       - uses: hashicorp/setup-terraform@v2
-        with:
-          terraform_wrapper: true
       
       - run: terraform init
 
